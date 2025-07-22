@@ -1,0 +1,114 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #fff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: #222;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0 20px 0;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #000DFF;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    background-color: #000DFF;
+    border: none;
+    padding: 14px 20px;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4e62ff;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+a {
+    color: #000DFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard and Admin Panel */
+.dashboard, .admin-panel {
+    max-width: 700px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.dashboard h2, .admin-panel h2 {
+    color: #000DFF;
+    margin-bottom: 25px;
+}
+
+.dashboard a, .admin-panel a {
+    display: inline-block;
+    margin: 12px 10px;
+    background: #000DFF;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard a:hover, .admin-panel a:hover {
+    background-color: #4e62ff;
+}
